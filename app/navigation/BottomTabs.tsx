@@ -4,6 +4,7 @@ import { RouteProp } from "@react-navigation/native";
 import HomeScreen from "../screens/HomeScreen";
 import ChatScreen from "../screens/ChatScreen";
 import InsightsScreen from "../screens/InsightsScreen";
+import ScreenTimeScreen from "../screens/ScreenTimeScreen";
 import { Ionicons } from "@expo/vector-icons";
 
 // Define the tab navigator type
@@ -11,6 +12,7 @@ type BottomTabParamList = {
   Home: undefined;
   Chat: undefined;
   Insights: undefined;
+  ScreenTime: undefined;
 };
 
 const Tab = createBottomTabNavigator<BottomTabParamList>();
@@ -35,6 +37,7 @@ export default function BottomTabs() {
       <Tab.Screen name="Home" component={HomeScreen} />
       <Tab.Screen name="Chat" component={ChatScreen} />
       <Tab.Screen name="Insights" component={InsightsScreen} />
+      <Tab.Screen name="ScreenTime" component={ScreenTimeScreen} />
     </Tab.Navigator>
   );
 }

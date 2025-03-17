@@ -14,6 +14,29 @@
       ]
     ],
     "name": "trustYou",
-    "slug": "trustYou"
+    "slug": "trustYou",
+    "extra": {
+      "router": {
+        "origin": "https://n"
+      },
+      "eas": {
+        "projectId": "38abc8ab-70ca-44ed-9935-bff828940719"
+      }
+    },
+    "owner": "ax-expo",
+    "ios": {
+      "bundleIdentifier": "com.axexpo.trustYou",
+      "infoPlist": {
+        "ITSAppUsesNonExemptEncryption": false
+      }
+    },
+    "android": {
+      "package": "com.axexpo.trustYou"
+    },
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    }
   }
 }
